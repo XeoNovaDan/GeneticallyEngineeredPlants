@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>PlantArtiveg</defName>
+		<label>artiveg plant</label>
+		<description>An extremely fragile, genetically engineered plant that grows poorly in any ground that's less than rich in nutrients, but grows exceptionally well in highly fertile environments.\n\nWidely used by urbworlds to feed their staggering population counts, in a bid to tackle their frequent food shortages.</description>
+		<statBases>
+			<MaxHitPoints>45</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/ArtivegPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible>
+			<nutrition>0.22</nutrition>
+		</ingestible>
+		<plant>
+			<fertilityMin>0.65</fertilityMin>
+			<fertilitySensitivity>1.7</fertilitySensitivity>
+			<dieIfLeafless>true</dieIfLeafless>
+			<reproduces>false</reproduces>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawArtiveg</harvestedThingDef>
+			<harvestYield>9</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowMinSkill>12</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Artiveg</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>4.24</growDays>
+			<lifespanFraction>5</lifespanFraction>
+			<visualSizeRange>
+				<min>0.5</min>
+				<max>1</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>PlantDuraveg</defName>
+		<label>duraveg plant</label>
+		<description>A completely different strain of artiveg; duraveg was selectively bred and modified on glitterworlds, for the purpose of being distributed as a new means for a food supply on caveworlds, and even toxic worlds.\n\nThis extremely hardy plant can survive many hostile conditions, is immune to blight, and can even grow in complete darkness, but has a very low food output compared to conventional crops when grown in reasonable bodies of earth.</description>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/DuravegPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible>
+			<nutrition>0.1</nutrition>
+		</ingestible>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0.01</fertilityMin>
+			<fertilitySensitivity>0.2</fertilitySensitivity>
+			<reproduces>false</reproduces>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>RawArtiveg</harvestedThingDef>
+			<harvestYield>6</harvestYield>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Artiveg</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>5.3</growDays>
+			<lifespanFraction>22.5</lifespanFraction>
+			<visualSizeRange>
+				<min>0.6</min>
+				<max>1.2</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<!-- production plants -->
+
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantBranchvine</defName>
+		<label>branchvine</label>
+		<description>Genetically engineered creeper plant that grows to become wood-like, and quickly at that. Unlike trees however, branchvines will die in the cold.</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Branchvine</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<fillPercent>0.2</fillPercent>
+		<pathCost>15</pathCost>
+		<ingestible>
+			<nutrition>0.9</nutrition>
+		</ingestible>
+		<plant>
+			<dieIfLeafless>true</dieIfLeafless>
+			<reproduces>false</reproduces>
+			<harvestYield>16</harvestYield>
+			<sowWork>900</sowWork>
+			<harvestWork>375</harvestWork>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowMinSkill>10</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Branchvine</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>6.95</growDays>
+			<immatureGraphicPath>Things/Plant/BranchvineImmature</immatureGraphicPath>
+			<visualSizeRange>
+				<min>0.5</min>
+				<max>1.2</max>
+			</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>PlantRocketree</defName>
+		<label>rocketree</label>
+		<description>A genetically engineered tree that yields no usable wood, but a lot of chemfuel. Will combust violently when ignited, and also fragile.</description>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<Flammability>1</Flammability>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/Rocketree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<ingestible>
+			<nutrition>0.2</nutrition>
+		</ingestible>
+		<plant>
+			<reproduces>false</reproduces>
+			<harvestYield>50</harvestYield>
+			<harvestWork>1000</harvestWork>
+			<harvestedThingDef>Chemfuel</harvestedThingDef>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<sowMinSkill>8</sowMinSkill>
+			<sowResearchPrerequisites>
+				<li>Rocketree</li>
+			</sowResearchPrerequisites>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>30</growDays>
+			<leaflessGraphicPath>Things/Plant/Rocketree_Leafless</leaflessGraphicPath>
+			<visualSizeRange>
+				<min>1.2</min>
+				<max>1.9</max>
+			</visualSizeRange>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.5</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<startWickOnDamageTaken>Flame</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+				<wickTicks>
+					<min>60</min>
+					<max>120</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

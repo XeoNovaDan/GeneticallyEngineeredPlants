@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ResearchTabDef>
+		<defName>XeosGeneticallyEngineeredPlants</defName>
+		<label>Xeo's Plants</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef Name="XeosGEPResearchBase" Abstract="True">
+		<tab>XeosGeneticallyEngineeredPlants</tab>
+	</ResearchProjectDef>
+
+</Defs>

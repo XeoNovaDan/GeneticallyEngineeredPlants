@@ -94,7 +94,7 @@
 		<label>branchvine</label>
 		<description>Genetically engineered creeper plant that grows to become wood-like, and quickly at that. Unlike trees however, branchvines will die in the cold.</description>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+			<MaxHitPoints>150</MaxHitPoints>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Branchvine</texPath>
@@ -109,9 +109,8 @@
 		<plant>
 			<dieIfLeafless>true</dieIfLeafless>
 			<reproduces>false</reproduces>
-			<harvestYield>16</harvestYield>
-			<sowWork>900</sowWork>
-			<harvestWork>375</harvestWork>
+			<harvestYield>15</harvestYield>
+			<harvestWork>500</harvestWork>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
@@ -133,7 +132,6 @@
 		<defName>PlantRocketree</defName>
 		<label>rocketree</label>
 		<description>A genetically engineered tree that yields no usable wood, but a lot of chemfuel. Will combust violently when ignited, and also fragile.</description>
-		<tickerType>Normal</tickerType>
 		<statBases>
 			<Flammability>1</Flammability>
 			<MaxHitPoints>150</MaxHitPoints>
@@ -149,7 +147,7 @@
 		<plant>
 			<reproduces>false</reproduces>
 			<harvestYield>50</harvestYield>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>1600</harvestWork>
 			<harvestedThingDef>Chemfuel</harvestedThingDef>
 			<sowTags>
 				<li>Ground</li>
@@ -171,7 +169,7 @@
 				<explosiveRadius>3.5</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 				<startWickOnDamageTaken>Flame</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.5</startWickHitPointsPercent>
+				<startWickHitPointsPercent>0.84</startWickHitPointsPercent>
 				<preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
 				<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
 				<wickTicks>

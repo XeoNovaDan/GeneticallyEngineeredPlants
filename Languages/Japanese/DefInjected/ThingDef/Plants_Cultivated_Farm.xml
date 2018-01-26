@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <PlantArtiveg.label>アーティベジ</PlantArtiveg.label>
+  <PlantArtiveg.description>遺伝子操作によって作られた、とても脆い作物です。栄養が十分ではない土地ではうまく育ちませんが、肥沃な土地では並外れた速度で育ちます。\n\nなお、Urbworldの星々では、人口過密で起こった食糧問題を緩和するために、この作物が用いられています。</PlantArtiveg.description>
+
+  <PlantDuraveg.label>デュラベジ</PlantDuraveg.label>
+  <PlantDuraveg.description>これはアーティベジの仲間ですが、性質は全く異なっています。デュラベジはGlitterworldの星々で選択的に交配、遺伝子操作されて作られました。これはCaveworldや汚染されているToxicworldのような星々でも育てられる作物です。\n\nこの驚異的なほど丈夫な作物は、様々な過酷な状況に耐えることができます。疫病に耐性があり、完全な暗闇で育てることさえもできます。しかしながら、従来の一般的な作物と比べると僅かな量の食物しか生み出すことができません。</PlantDuraveg.description>
+
+
+  <!-- production plants -->
+
+  <PlantBranchvine.label>ブランチバイン</PlantBranchvine.label>
+  <PlantBranchvine.description>遺伝子操作によって作られたツル植物で、素早く木のような植物に成長します。普通の樹木とは違い、冷気に触れると枯れてしまいます。</PlantBranchvine.description>
+
+  <PlantRocketree.label>ロケットツリー</PlantRocketree.label>
+  <PlantRocketree.description>遺伝子操作によって作られた樹木で、この木からは木材のかわりに多量のバイオ液化燃料を収穫することができます。衝撃に弱く、もし火が点いてしまうと爆発を引き起こします。</PlantRocketree.description>
+
+
+</LanguageData>

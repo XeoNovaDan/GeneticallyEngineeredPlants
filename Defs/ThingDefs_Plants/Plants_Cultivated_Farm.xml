@@ -4,9 +4,10 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>PlantArtiveg</defName>
 		<label>artiveg plant</label>
-		<description>An extremely fragile, genetically engineered plant that grows poorly in any ground that's less than rich in nutrients, but grows exceptionally well in highly fertile environments.\n\nWidely used by urbworlds to feed their staggering population counts, in a bid to tackle their frequent food shortages.</description>
+		<description>An extremely delicate, genetically engineered plant that will only grow in highly fertile environments but has an excellent nutrition output.\n\nWidely used by urbworlds to feed their staggering population counts, in a bid to tackle their frequent food shortages.</description>
 		<statBases>
 			<MaxHitPoints>45</MaxHitPoints>
+			<Nutrition>0.22</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/ArtivegPlant</texPath>
@@ -14,17 +15,13 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
-		<ingestible>
-			<nutrition>0.22</nutrition>
-		</ingestible>
 		<plant>
-			<fertilityMin>0.65</fertilityMin>
-			<fertilitySensitivity>1.7</fertilitySensitivity>
+			<fertilityMin>1.4</fertilityMin>
+			<fertilitySensitivity>1.8</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
-			<reproduces>false</reproduces>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawArtiveg</harvestedThingDef>
-			<harvestYield>9</harvestYield>
+			<harvestYield>8</harvestYield>
 			<sowTags>
 				<li>Ground</li>
 				<li>Hydroponic</li>
@@ -34,7 +31,7 @@
 				<li>Artiveg</li>
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>4.24</growDays>
+			<growDays>4.47</growDays>
 			<lifespanFraction>5</lifespanFraction>
 			<visualSizeRange>
 				<min>0.5</min>
@@ -46,9 +43,11 @@
 	<ThingDef ParentName="PlantBase">
 		<defName>PlantDuraveg</defName>
 		<label>duraveg plant</label>
-		<description>A completely different strain of artiveg; duraveg was selectively bred and modified on glitterworlds, for the purpose of being distributed as a new means for a food supply on caveworlds, and even toxic worlds.\n\nThis extremely hardy plant can survive many hostile conditions, is immune to blight, and can even grow in complete darkness, but has a very low food output compared to conventional crops when grown in reasonable bodies of earth.</description>
+		<description>A completely different strain of artiveg; duraveg was selectively bred and modified on glitterworlds, for the purpose of being distributed as a new means for a food supply on caveworlds.\n\nThis extremely hardy plant can survive freezing temperatures, is immune to blight, and can even grow in complete darkness, but has a low nutrition output compared to conventional crops.</description>
 		<statBases>
+			<Flammability>0.5</Flammability>
 			<MaxHitPoints>270</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/DuravegPlant</texPath>
@@ -56,16 +55,12 @@
 		</graphicData>
 		<selectable>true</selectable>
 		<pathCost>10</pathCost>
-		<ingestible>
-			<nutrition>0.1</nutrition>
-		</ingestible>
 		<plant>
 			<neverBlightable>true</neverBlightable>
 			<growMinGlow>0</growMinGlow>
 			<growOptimalGlow>0</growOptimalGlow>
-			<fertilityMin>0.01</fertilityMin>
+			<fertilityMin>0.3</fertilityMin>
 			<fertilitySensitivity>0.2</fertilitySensitivity>
-			<reproduces>false</reproduces>
 			<harvestTag>Standard</harvestTag>
 			<harvestedThingDef>RawArtiveg</harvestedThingDef>
 			<harvestYield>6</harvestYield>
@@ -78,8 +73,8 @@
 				<li>Artiveg</li>
 			</sowResearchPrerequisites>
 			<topWindExposure>0.1</topWindExposure>
-			<growDays>5.3</growDays>
-			<lifespanFraction>22.5</lifespanFraction>
+			<growDays>5.2</growDays>
+			<lifespanFraction>23.1</lifespanFraction>
 			<visualSizeRange>
 				<min>0.6</min>
 				<max>1.2</max>
@@ -92,9 +87,10 @@
 	<ThingDef ParentName="TreeBase">
 		<defName>PlantBranchvine</defName>
 		<label>branchvine</label>
-		<description>Genetically engineered creeper plant that grows to become wood-like, and quickly at that. Unlike trees however, branchvines will die in the cold.</description>
+		<description>Genetically engineered creeper plant that grows to become wood-like, and quickly at that. Unlike trees however, branchvines can be grown indoors but they will also die in the cold.</description>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
+			<Nutrition>0.9</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Branchvine</texPath>
@@ -103,13 +99,12 @@
 		<selectable>true</selectable>
 		<fillPercent>0.2</fillPercent>
 		<pathCost>15</pathCost>
-		<ingestible>
-			<nutrition>0.9</nutrition>
-		</ingestible>
 		<plant>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
 			<dieIfLeafless>true</dieIfLeafless>
-			<reproduces>false</reproduces>
-			<harvestYield>15</harvestYield>
+			<harvestYield>12</harvestYield>
+			<sowWork>6000</sowWork>
 			<harvestWork>500</harvestWork>
 			<sowTags>
 				<li>Ground</li>
@@ -118,6 +113,7 @@
 			<sowResearchPrerequisites>
 				<li>Branchvine</li>
 			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6.95</growDays>
 			<immatureGraphicPath>Things/Plant/BranchvineImmature</immatureGraphicPath>
@@ -125,27 +121,26 @@
 				<min>0.75</min>
 				<max>1.8</max>
 			</visualSizeRange>
+			<interferesWithRoof>false</interferesWithRoof>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="TreeBase">
 		<defName>PlantRocketree</defName>
+		<ignoreConfigErrors>true</ignoreConfigErrors>
 		<label>rocketree</label>
-		<description>A genetically engineered tree that yields no usable wood, but a lot of chemfuel. Will combust violently when ignited, and also fragile.</description>
+		<description>A genetically engineered tree that yields no usable wood, but a lot of chemfuel. Extraordinarily fragile and will explode in a large fireball if destroyed.</description>
 		<statBases>
 			<Flammability>1</Flammability>
-			<MaxHitPoints>150</MaxHitPoints>
+			<Nutrition>0.2</Nutrition>
+			<MaxHitPoints>50</MaxHitPoints>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/Rocketree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<selectable>true</selectable>
-		<ingestible>
-			<nutrition>0.2</nutrition>
-		</ingestible>
 		<plant>
-			<reproduces>false</reproduces>
 			<harvestYield>50</harvestYield>
 			<harvestWork>1600</harvestWork>
 			<harvestedThingDef>Chemfuel</harvestedThingDef>
@@ -156,9 +151,10 @@
 			<sowResearchPrerequisites>
 				<li>Rocketree</li>
 			</sowResearchPrerequisites>
+			<mustBeWildToSow>false</mustBeWildToSow>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>30</growDays>
-			<leaflessGraphicPath>Things/Plant/Rocketree_Leafless</leaflessGraphicPath>
+			<leaflessGraphicPath>Things/Plant/RocketreeLeafless</leaflessGraphicPath>
 			<visualSizeRange>
 				<min>1.2</min>
 				<max>1.9</max>
@@ -169,8 +165,8 @@
 				<explosiveRadius>3.5</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 				<startWickOnDamageTaken>Flame</startWickOnDamageTaken>
-				<startWickHitPointsPercent>0.84</startWickHitPointsPercent>
-				<preExplosionSpawnThingDef>FilthFuel</preExplosionSpawnThingDef>
+				<startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
 				<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
 				<wickTicks>
 					<min>60</min>

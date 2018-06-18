@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+	<!-- research tab -->
 	<ResearchTabDef>
-		<defName>XeosGeneticallyEngineeredPlants</defName>
-		<label>Xeo's Plants</label>
+		<defName>XNDResearchTab</defName>
+		<label>XND's Mods</label>
 	</ResearchTabDef>
 
-	<ResearchProjectDef Name="XeosGEPResearchBase" Abstract="True">
-		<tab>XeosGeneticallyEngineeredPlants</tab>
+	<!-- base research project -->
+	<ResearchProjectDef Name="XNDResearchProjectBase" Abstract="True">
+		<tab>XNDResearchTab</tab>
 	</ResearchProjectDef>
 
 </Defs>

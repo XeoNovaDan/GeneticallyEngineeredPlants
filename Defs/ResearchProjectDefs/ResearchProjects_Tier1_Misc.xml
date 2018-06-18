@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ResearchProjectDef ParentName="XeosGEPResearchBase">
+	<ResearchProjectDef ParentName="XNDResearchProjectBase">
 		<defName>Branchvine</defName>
 		<label>branchvine</label>
 		<description>Allows colonists to plant branchvine, a creeper plant that quickly develops wood-like properties.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>TreeSowing</li>
+		</prerequisites>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

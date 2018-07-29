@@ -5,7 +5,7 @@
 		<defName>Artiveg</defName>
 		<label>artiveg</label>
 		<description>Allows colonists to plant artiveg and duraveg, two genetically engineered plants that juxtapose in nature.</description>
-		<baseCost>800</baseCost>
+		<baseCost>1200</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>MultiAnalyzer</li>
@@ -15,7 +15,7 @@
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 		<researchViewX>3</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>2</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>1df881f9-d064-4203-9bb8-6f84fb584a0b</ID>
+  <ModName>[XND] Xeo's Genetically Engineered Plants</ModName>
+  <Version>1.3.2</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>XeoNovaDan</Owner>
+    <Project>GeneticallyEngineeredPlants</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
